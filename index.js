@@ -7,7 +7,7 @@ let faqsTitle = document.querySelector("#faqHeading");
 
 
 $(function getdeparture() {
-  $.getJSON("http://localhost:8008/departure", function (data) {
+  $.getJSON("https://wadiia-backend.herokuapp.com/departure", function (data) {
     let autoComplete = [];
     for (var i = 0, len = data.length; i < len; i++) {
       data[i].value && autoComplete.push(data[i].value);
@@ -21,7 +21,7 @@ $(function getdeparture() {
 });
 
 $(function getarrival() {
-  $.getJSON("http://localhost:8008/arrival", function (data) {
+  $.getJSON("https://wadiia-backend.herokuapp.com/arrival", function (data) {
     let autoComplete = [];
     for (var i = 0, len = data.length; i < len; i++) {
       data[i].value && autoComplete.push(data[i].value);
