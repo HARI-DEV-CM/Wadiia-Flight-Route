@@ -36,7 +36,7 @@ $(function getarrival() {
 
 const getcms = async (data) => {
   console.log(data, "cms");
-  const response = await fetch("http://localhost:8008/route", {
+  const response = await fetch("https://wadiia-backend.herokuapp.com/route", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const getcms = async (data) => {
 //MOBILE
 const getcmsmob = async (data) => {
   console.log(data, "cms");
-  const response = await fetch("http://localhost:8008/route", {
+  const response = await fetch("https://wadiia-backend.herokuapp.com/route", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
