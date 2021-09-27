@@ -463,10 +463,10 @@ input[type="submit"] {
 }
 .inputField input,
 .inputField span {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -719,7 +719,7 @@ input[type="submit"] {
     box-sizing: border-box;
   }
   input[type="number"] {
-    padding-left: 73px;
+    padding-left: 71px;
     outline: none;
     height: 48.98px;
     padding-bottom: 0;
