@@ -226,14 +226,17 @@ $(function () {
     if ($(this).val() == "One-Way") {
       document.getElementById("arrival-icon").style.display = "none";
       document.getElementById("arrival-date").style.display = "none";
+      document.getElementById("spanarrival").style.display = "none";
       document.getElementById("departure-date").style.width = "286px"
     } else if ($(this).val() == "Round-Trip") {
       document.getElementById("departure-date").style.width = "101px";
       document.getElementById("arrival-date").style.display = "inline-block";
+      document.getElementById("spanarrival").style.display = "inline-block";
       document.getElementById("arrival-icon").style.display = "inline-block";
     } else {
       document.getElementById("departure-date").style.width = "101px";
       document.getElementById("arrival-date").style.display = "inline-block";
+      document.getElementById("spanarrival").style.display = "inline-block";
       document.getElementById("arrival-icon").style.display = "inline-block";
     }
   });
@@ -245,6 +248,7 @@ $("#onewaybutton").click(function () {
   $("#hiddenbutton").val("One-Way");
   document.getElementById("arrival-icon-mob").style.display = "none";
   document.getElementById("arrival-date-mob").style.display = "none";
+  document.getElementById("spanarrivalmob").style.display = "none";
   document.getElementById("onewaybutton").classList.add("wad-button-clicked");
   document.getElementById("roundtripbutton").classList.remove("wad-button-clicked");
   document.getElementById("multicitybutton").classList.remove("wad-button-clicked");
@@ -254,6 +258,7 @@ $("#roundtripbutton").click(function () {
   $("#hiddenbutton").val("Round-Trip");
   document.getElementById("arrival-date-mob").style.display = "inline-block";
   document.getElementById("arrival-icon-mob").style.display = "inline-block";
+  document.getElementById("spanarrivalmob").style.display = "inline-block";
   document.getElementById("onewaybutton").classList.remove("wad-button-clicked");
   document.getElementById("roundtripbutton").classList.add("wad-button-clicked");
   document.getElementById("multicitybutton").classList.remove("wad-button-clicked");
@@ -263,6 +268,7 @@ $("#multicitybutton").click(function () {
   $("#hiddenbutton").val("Multi-Trip");
   document.getElementById("arrival-date-mob").style.display = "inline-block";
   document.getElementById("arrival-icon-mob").style.display = "inline-block";
+  document.getElementById("spanarrivalmob").style.display = "inline-block";
   document.getElementById("onewaybutton").classList.remove("wad-button-clicked");
   document.getElementById("roundtripbutton").classList.remove("wad-button-clicked");
   document.getElementById("multicitybutton").classList.add("wad-button-clicked");
