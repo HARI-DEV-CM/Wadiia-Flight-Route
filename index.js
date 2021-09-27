@@ -226,13 +226,13 @@ $(function () {
     if ($(this).val() == "One-Way") {
       document.getElementById("arrival-icon").style.display = "none";
       document.getElementById("arrival-date").style.display = "none";
-      document.getElementById("departure-date").style.width = "300px";
+      document.getElementById("departure-date").style.width = "286px"
     } else if ($(this).val() == "Round-Trip") {
-      document.getElementById("departure-date").style.width = "116px";
+      document.getElementById("departure-date").style.width = "101px";
       document.getElementById("arrival-date").style.display = "inline-block";
       document.getElementById("arrival-icon").style.display = "inline-block";
     } else {
-      document.getElementById("departure-date").style.width = "116px";
+      document.getElementById("departure-date").style.width = "101px";
       document.getElementById("arrival-date").style.display = "inline-block";
       document.getElementById("arrival-icon").style.display = "inline-block";
     }
