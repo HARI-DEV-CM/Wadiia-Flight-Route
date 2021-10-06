@@ -506,6 +506,9 @@ input[type="submit"] {
   color: #336699;
   font-weight: 500;
 }
+.wad-bottom-mob, .wad-mob-heading {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   h2 {
@@ -566,11 +569,12 @@ input[type="submit"] {
 
   .hamburger {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     margin-left: 2rem;
     padding-top: 1rem;
     line-height: 3px;
+    z-index: 100;
   }
   .hamburger-line1 {
     width: 40px;
@@ -604,6 +608,10 @@ input[type="submit"] {
   .wad-nav-mob {
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 99;
   }
 
   .wad-row-mob {
@@ -614,9 +622,29 @@ input[type="submit"] {
     justify-content: center;
   }
 
-  .wad-bottom-mob {
+  /* .wad-bottom-mob {
     background-color: #d4dfea;
     padding: 3px;
+  } */
+  .wad-bottom-mob {
+    display: block;
+    background-color:#336699;
+    padding: 1px;
+  }
+  .wad-bottom-mob p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    font-size: 12px;
+    color:#dfe7ef;
+  }
+  .wad-mob-heading{
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 12px ;
+  }
+  .wad-mob-heading h2{
+    font-size: 20px !important;
   }
   .inputField span {
     left: 175px !important;
@@ -769,11 +797,12 @@ input[type="submit"] {
 @media only screen and (max-width: 1024px) and (min-width: 1001px) {
   .hamburger {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     margin-left: 2rem;
     padding-top: 1rem;
     line-height: 3px;
+    z-index: 100;
   }
   .hamburger-line1 {
     width: 40px;
@@ -850,6 +879,10 @@ input[type="submit"] {
   .wad-nav-mob {
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 99;
   }
 
   .wad-row-mob {
@@ -860,9 +893,29 @@ input[type="submit"] {
     justify-content: center;
   }
 
-  .wad-bottom-mob {
+  /* .wad-bottom-mob {
     background-color: #d4dfea;
     padding: 3px;
+  } */
+  .wad-bottom-mob {
+    display: block;
+    background-color:#336699;
+    padding: 1px;
+  }
+  .wad-bottom-mob p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    font-size: 12px;
+    color:#dfe7ef;
+  }
+  .wad-mob-heading{
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 12px ;
+  }
+  .wad-mob-heading h2{
+    font-size: 20px !important;
   }
   .inputField span {
     left: 175px !important;
@@ -1094,11 +1147,12 @@ input[type="submit"] {
 
   .hamburger {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     margin-left: 1rem;
     padding-top: 1rem;
     line-height: 3px;
+    z-index: 100;
   }
   .hamburger-line1 {
     width: 30px;
