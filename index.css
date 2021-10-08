@@ -26,6 +26,13 @@
   --borderbox-color: #274d83;
 }
 
+.main-title{
+  text-align: center;
+  color: #336699;
+  font-size: 32px;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 30px !important;
   color: #336699;
@@ -33,11 +40,29 @@ h1 {
   text-align: center;
 }
 
-h2 {
+/* h2 {
   font-size: 30px !important;
   color: #336699;
   font-weight: bold !important;
   text-align: center;
+} */
+
+h2,h3{
+  text-align: center !important;
+  color: #336699 !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  margin: 0;
+}
+
+p{
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+.custom-container{
+  width: 90%;
+  margin: 0 auto;
 }
 
 body {
@@ -54,17 +79,52 @@ img {
     list-style-type: none;
   } */
 
-li {
+.footer-column ul li {
   font-size: 10px;
   margin-left: -30px;
 }
 
+#wd-breadcrumb{
+  background: #336699;
+  height: 40px;
+  padding: 8px 0;
+  font-size: 16px;
+}
+#wd-breadcrumb-mob{
+  background: #336699;
+  height: 40px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+#wd-breadcrumb ul, #wd-breadcrumb-mob ul{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+#wd-breadcrumb ul li, #wd-breadcrumb-mob ul li{
+  display: inline-block;
+  /* padding: 0 8px 0 0; */
+}
+#wd-breadcrumb a, #wd-breadcrumb-mob a{
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#wd-breadcrumb-mob {
+  display: none;
+}
+
 .wad-search-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 71px;
-  padding: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 94px;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
   /* border: 1px solid grey; */
 }
 
@@ -80,7 +140,7 @@ li {
 }
 
 .wad-column-head {
-  margin: 0 100px;
+  margin: 0px -20px 0px 252px;
   width: 35%;
   justify-content: space-between;
   display: flex;
@@ -124,9 +184,7 @@ li {
 }
 
 .wad-row-button {
-  margin-top: 18px !important;
-  margin: 40px 12%;
-  text-align: center;
+  display: none;
 }
 
 .wad-row-button:after {
@@ -159,10 +217,9 @@ select.account {
   background-color: var(--breadcrumb-box-color);
   padding: 28px 0px 13px 4.9vw;
   color: #ffffff;
-  margin-top: -30px;
 }
 
-.wad-bc-row p {
+.wad-breadcrumbs p {
   font-size: 16px;
 }
 
@@ -184,18 +241,20 @@ select.account {
 
 .wad-searchbox {
   display: flex;
+  width: 92%;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 
-.wad-searchbox > form{
+/* .wad-searchbox > form{
   margin-left: 4.9vw;
-}
+} */
 
 .wad-third-row {
   display: flex;
   justify-content: space-between;
-  width: 57vw;
+  width: 57.3vw;
 }
 
 .icon {
@@ -210,21 +269,22 @@ select.account {
 }
 
 .wad-qbox {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   float: right;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   padding: 10px 10px 13px 10px;
   border: solid 1px #6b86ab;
   border-radius: 5px;
   margin-left: 0;
   color: #336699;
   font-size: 20px;
-  margin-right: 4.9vw;
+  /* margin-right: 4.9vw; */
 }
 
 .wad-qbox p {
   font-size: 22px;
   font-weight: 500;
+  color: #336699 !important;
 }
 
 .wad-qbox ul {
@@ -344,13 +404,16 @@ select.account {
 .menu li {
   margin-top: 7rem;
   padding: 1rem;
-  text-align: center;
 }
 .menu li a {
   text-decoration: none;
   display: block;
   font-size: 35px;
 }
+.menuLink i{
+  padding-right: 12px;
+}
+
 
 .close {
   position: fixed;
@@ -512,8 +575,9 @@ input[type="submit"] {
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   h2 {
-    font-size: 26px !important;
+    font-size: 20px !important;
     margin: auto 60px !important;
+    line-height: 27px !important;
   }
   .wad-row-button {
     margin: 40px 2%;
@@ -533,6 +597,7 @@ input[type="submit"] {
 
   .wad-column-button {
     margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
     width: 33.33% !important;
     padding: 0;
@@ -548,7 +613,7 @@ input[type="submit"] {
     background-color: rgb(221, 247, 247);
     border: none;
     color: #255489;
-    padding: 10px 66px 10px 66px;
+    padding: 26px 64px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -655,8 +720,12 @@ input[type="submit"] {
     left: 75px;
   }
 
-  .wad-breadcrumbs {
+  #wd-breadcrumb {
     display: none;
+  }
+
+  #wd-breadcrumb-mob {
+    display: block;
   }
 
   .wad-from {
@@ -724,6 +793,7 @@ input[type="submit"] {
   .wad-form-details p {
     margin-top: 20px;
     font-size: 22px;
+    color: #336699;
   }
 
   .wad-form-details li {
@@ -755,12 +825,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 20px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -841,6 +914,7 @@ input[type="submit"] {
 
   .wad-column-button {
     margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
     width: 33.33% !important;
     padding: 0;
@@ -856,7 +930,7 @@ input[type="submit"] {
     background-color: rgb(221, 247, 247);
     border: none;
     color: #255489;
-    padding: 10px 117px 10px 117px;
+    padding: 32px 117px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -926,8 +1000,12 @@ input[type="submit"] {
     left: 75px;
   }
 
-  .wad-breadcrumbs {
+  #wd-breadcrumb {
     display: none;
+  }
+
+  #wd-breadcrumb-mob {
+    display: block;
   }
 
   .wad-from {
@@ -1027,12 +1105,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 20px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -1068,12 +1149,11 @@ input[type="submit"] {
 
 @media only screen and (max-width: 480px) {
   h2 {
-    font-size: 20px !important;
-    margin-left: 16px !important;
-    margin-right: 16px !important;
-  }
-  h2 {
-    font-size: 20px !important;
+    font-size: 18px !important;
+    line-height: 27px !important;
+    margin: auto 0 !important;
+    /* margin-left: 16px !important;
+    margin-right: 16px !important; */
   }
   .wad-row-button {
     margin: 0px 0px 0px 0px;
@@ -1082,6 +1162,7 @@ input[type="submit"] {
 
   .wad-row-button {
     margin: 40px 0;
+    text-align: center;
   }
 
   .wad-compare-button {
@@ -1153,6 +1234,7 @@ input[type="submit"] {
     padding-top: 1rem;
     line-height: 3px;
     z-index: 100;
+    margin-top: 8px;
   }
   .hamburger-line1 {
     width: 30px;
@@ -1177,6 +1259,7 @@ input[type="submit"] {
   }
   .wad-search-flight-btn {
     width: 95%;
+    margin-top: 12px;
   }
 
   .menu {
@@ -1200,12 +1283,15 @@ input[type="submit"] {
   .menu li {
     margin-top: 3rem;
     padding: 1rem;
-    text-align: center;
   }
   .menu li a {
     text-decoration: none;
     display: block;
     font-size: 15px;
+  }
+  .menu object{
+    margin-bottom: -10px;
+    padding-right: 10px;
   }
 
   .close {
@@ -1221,7 +1307,7 @@ input[type="submit"] {
   
   /* Blue Card starts */
   
-  .wad-sec1-head {
+  /* .wad-sec1-head {
     font-size: 30px;
     margin-top: 40px;
     margin-left: 150px;
@@ -1320,9 +1406,81 @@ input[type="submit"] {
     .wad-card-info h4 {
       font-weight: 400 !important;
     }
-  }
+  } */
   
   /* Blue Card Ends */
+
+  /* blue card 1 starts */
+
+  #wd-flight-info p{
+    text-align: center;
+    font-size: 20px;
+    margin: 16px 0 0;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  /*Price Card*/
+  .price-card-wrapper{
+    padding: 56px 0;
+  }
+  .wd-price-card{
+    background: #284D83;
+    border-radius: 20px;
+    padding: 32px 16px;
+    min-height: 290px;
+    text-align: center;
+  }
+  .wd-price-card object{
+    margin-bottom: 14px;
+  }
+  .wd-price-card h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 16px;
+    line-height: 24px;
+  }
+  #wd-flight-info .wd-price-card p{
+    color: #fff;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 580px){
+    .custom-container{
+      width: 92%;
+    }
+    .main-title{
+      font-size: 24px;
+      line-height: 27px
+    }
+    h2,h3{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .wd-price-card{
+      min-height: auto;
+      margin: 0 0 16px;
+    }
+    #wd-flight-info p{
+      font-size: 14px;
+    }
+    .price-card-wrapper{
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: 581px) and (max-width: 768px){
+    .wd-price-card{
+      margin-bottom: 18px;
+    }
+    #wd-flight-info p{
+      font-size: 18px;
+    }
+  }
+
+  /* blue card 1 ends */
   
   /* Button Section starts */
   
@@ -1393,6 +1551,9 @@ input[type="submit"] {
       margin-left: 55px;
       margin-right: 55px;
     }
+    .wad-row-flight-btn{
+      margin-top: 24px !important;
+    }
   }
   @media only screen and (max-width: 480px) {
     .wad-row-flight-btn {
@@ -1420,13 +1581,16 @@ input[type="submit"] {
       margin-left: 10px;
       margin-right: 10px;
     }
+    .wad-row-flight-btn h2{
+      margin-bottom: 6px !important;
+    }
   }
   
   /* Button Section Ends */
   
   /* Top airlines section starts */
   
-  .wad-airlines-row {
+  /* .wad-airlines-row {
     margin: 40px 238px 0 238px;
   }
   .wad-airlines-row:after {
@@ -1532,13 +1696,111 @@ input[type="submit"] {
       padding: 10px 16px;
       font-size: 12px;
     }
-  }
+  } */
   
   /* Top airlines section ends */
+
+  /* Top airlines section 1 starts */
+
+  .wd-other-airline{
+    padding: 56px 0 0px;
+  }
+  .wd-other-airline-list{
+    width: 892px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .wd-other-airline-list ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .wd-other-airline-list li{
+    display: inline-block;
+    min-width: 320px;
+    margin: 0 56px;
+    padding: 12px 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .wd-other-airline-list li h4{
+    color: #336699;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .wd-btn-red,.wd-btn-red:hover{
+    background: #FF0000;
+    color: #fff;
+    height: 40px;
+    min-width: 148px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 0;
+    float: right;
+  }
+  .wd-other-airline-list span{
+    display: inline-block;
+  }
+  .wd-other-airline-list span a{
+    color: #336699;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 160px;
+    padding: 8px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 580px){
+    .custom-container{
+      width: 92%;
+    }
+    h2,h3{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .wd-other-airline-list{
+      width: 100%;
+    }
+    .wd-other-airline-list li{
+      display: block;
+      min-width: auto;
+      margin: 0;
+    }
+    .wd-other-airline-list li:first-child{
+      display: none;
+    }
+    .wd-other-airline-list span a{
+      font-size: 14px;
+    }
+    .wd-btn-red{
+      font-size: 14px;
+    }
+    .wd-other-airline-list{
+      padding: 10px 0;
+    }
+    .wd-other-airline-list h4{
+      font-size: 18px !important;
+    }
+  }
+
+  @media screen and (min-width: 581px) and (max-width: 768px){
+    .wd-other-airline-list li {
+      margin: 0 12px;
+    }
+    .wd-other-airline-list{
+      width: 692px;
+    }
+  }
+
+
+  /* Top airlines section 1 ends */
   
   /* Alarm clock Information Starts */
   
-  .wad-row-time {
+  /* .wad-row-time {
     display: table;
     background-color: #f6f9fe;
     margin: 40px auto;
@@ -1646,9 +1908,79 @@ input[type="submit"] {
     .wad-row-time {
       margin: 0px 0 0 0;
     }
-  }
+  } */
   
   /* Alarm clock Information Ends */
+
+  /* alarm clock 1 starts */
+
+   /*Generic Info*/
+   .wd-generic-info{
+    background: #F6F9FE;
+    padding: 40px ;
+  }
+  .wd-generic-info h2{
+    margin: 0 0 32px;
+  }
+  .wd-common-white-card{
+    background: #fff;
+    box-shadow: 0px 4px 22px #53535329;
+    border-radius: 20px;
+    padding: 40px 0;
+    text-align: center;
+    height: 240px;
+    margin: 0 21px;
+  }
+  .wd-gi-common-title{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .wd-gi-tag{
+    color: #7C7C7C;
+    font-size: 14px;
+    margin: 18px 0 8px;
+    display: block;
+  }
+
+  @media screen and (max-width: 580px){
+    .custom-container{
+      width: 92%;
+    }
+    .main-title{
+      font-size: 24px;
+      line-height: 27px
+    }
+    h2,h3{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .wd-generic-info{
+      padding: 24px 16px;
+    }
+    .wd-common-white-card{
+      height: auto;
+      margin: 0 0 16px !important;
+      padding: 24px 0;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .wd-common-white-card object {
+      width: 30%;
+    }
+    .wd-common-white-card{
+      margin-bottom: 18px;
+    }
+    .wd-generic-info h2{
+      margin-bottom: 16px !important;
+    }
+  }
+
+
+
+  /* alarm clock 1 ends */
   
   /* Table with Logos starts */
   
@@ -1696,6 +2028,8 @@ input[type="submit"] {
   .wad-column-routes-head3 > p,
   .wad-column-routes-head4 > p {
     margin-bottom: 0 !important;
+    font-size: 16px !important;
+    color: white;
   }
   
   .wad-search-routes {
@@ -1719,11 +2053,15 @@ input[type="submit"] {
   
   .wad-column-routes > p {
     margin-bottom: 0 !important;
-    font-weight: 700;
+    font-weight: 700 !important;
   }
   
   .wad-column-routes-sub {
     padding-left: 1.4vw;
+  }
+
+  .wad-column-routes-sub p{
+    font-size: 18px;
   }
   
   .wad-column-routes > p > object {
@@ -1853,6 +2191,11 @@ input[type="submit"] {
       align-items: center;
       height: 36px;
     }
+
+
+    .wad-column-routes-head1 > p, .wad-column-routes-head2 > p, .wad-column-routes-head3 > p, .wad-column-routes-head4 > p{
+      font-size: 9px !important;
+}
   
     .wad-column-routes-head1,
     .wad-column-routes-head2,
@@ -1928,7 +2271,7 @@ input[type="submit"] {
   
   .wad-faq {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   
   .wad-container-faq {
@@ -2013,7 +2356,7 @@ input[type="submit"] {
   
     .wad-container-faq h2 {
       font-size: 18px;
-      margin-bottom: 8px;
+      margin: 22px 0 0 0 !important;
     }
   
     .wad-faq h2 {
@@ -2166,6 +2509,17 @@ input[type="submit"] {
     .wad-faq-card2,
     .wad-faq-card3 {
       flex: 100%;
+      min-height: auto;
+    }
+    .wad-faq-card1 h5,
+    .wad-faq-card2 h5,
+    .wad-faq-card3 h5{
+      padding-bottom: 0;
+    }
+    .wad-faq-card1 p,
+    .wad-faq-card2 p,
+    .wad-faq-card3 p{
+      padding: 4px;
     }
   }
   
@@ -2409,6 +2763,12 @@ input[type="submit"] {
     .wad-ipad-footer5 {
       margin-top: 102px;
     }
+    .subscribebox_input{
+      padding-left: 24px !important;
+      padding-bottom: 12px !important;
+      width: 85% !important;
+
+    }
   }
   
   @media only screen and (max-width: 1024px) and (min-width: 1001px) {
@@ -2505,6 +2865,10 @@ input[type="submit"] {
     }
     .subscribebox_input {
       padding-left: 20px !important;
+      padding-bottom: 12px !important;
+    }
+    .wad-footer-logo-content p{
+      font-size: 14px;
     }
   }
   
@@ -2527,6 +2891,9 @@ input[type="submit"] {
   
     .footer-logos-deals-details-mob {
       display: flex;
+    }
+    .wad-footer-logo-content p{
+      font-size: 16px;
     }
   }
   
