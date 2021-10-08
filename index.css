@@ -234,6 +234,9 @@ select.account {
   justify-content: center;
   align-items: center;
 }
+.wad-pageroutes h1{
+  margin: 24px 0;
+}
 
 .wad-pageroutes h2 {
   color: #336699;
@@ -1304,111 +1307,6 @@ input[type="submit"] {
 }
 
 /* Header with Form section ends */
-  
-  /* Blue Card starts */
-  
-  /* .wad-sec1-head {
-    font-size: 30px;
-    margin-top: 40px;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-  .wad-row-info {
-    text-align: center;
-    display: table;
-    margin-top: 18px !important;
-    margin: 40px auto;
-  }
-  .wad-row-info:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .wad-row-info > p {
-    font-size: 20px;
-    margin-bottom: 50px;
-  }
-  .wad-column-info {
-    float: left;
-    width: 290px;
-    height: 290px;
-    margin: 0 12px;
-  }
-  .wad-card-info {
-    color: white;
-    border-radius: 15px;
-    padding: 34px 12px;
-    text-align: center;
-    background-color: #284d83;
-  }
-  .wad-card-info h4 {
-    font-size: 14px; 
-    margin-top: 16px; 
-    font-weight:500;
-  }
-  .wad-card-info P {
-    font-size: 12px;
-  }
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
-    .wad-sec1-head {
-      font-size: 20px;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-    .wad-row-info {
-      display: table;
-      text-align: center;
-      margin: 40px 70px;
-    }
-    .wad-row-info > p {
-      font-size: 16px;
-      margin: auto 5% 12px 5%;
-    }
-    .wad-card-info p {
-      margin-bottom: 0;
-    }
-    .wad-card-info h4 {
-      font-weight: 400 !important;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) and (min-width: 1001px){
-    .wad-row-info{
-      margin: 40px;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    .wad-row-info {
-      margin: 40px auto 8px auto;
-    }
-  
-    .wad-sec1-head {
-      font-size: 16px;
-      margin-top: 40px;
-      margin-left: 16px;
-      margin-right: 16px;
-    }
-    .wad-column-info {
-      height: auto;
-      width: auto;
-      margin: 8px 16px;
-    }
-    .wad-card-info {
-      padding: 18px 12px;
-    }
-    .wad-card-info p {
-      margin-bottom: 0;
-    }
-    .wad-row-info > p {
-      font-size: 14px;
-      margin: 16px 5% !important;
-    }
-    .wad-card-info h4 {
-      font-weight: 400 !important;
-    }
-  } */
-  
-  /* Blue Card Ends */
 
   /* blue card 1 starts */
 
@@ -1558,6 +1456,7 @@ input[type="submit"] {
   @media only screen and (max-width: 480px) {
     .wad-row-flight-btn {
       margin-top: 12px !important;
+      margin-bottom: 18px;
     }
   
     .wad-row-flight-btn > p {
@@ -1587,118 +1486,6 @@ input[type="submit"] {
   }
   
   /* Button Section Ends */
-  
-  /* Top airlines section starts */
-  
-  /* .wad-airlines-row {
-    margin: 40px 238px 0 238px;
-  }
-  .wad-airlines-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .wad-airlines-column {
-    float: left;
-    width: 50%;
-    padding: 20px 50px;
-  }
-  .wad-airlines-column p{
-    float: left;
-  }
-  .wad-airlines-column button{
-    float: right;
-  }
-  .wad-airlines-column h3{
-    font-weight: bold;
-  }
-  .wad-airlines-column:nth-of-type(2){
-    margin-right: -1.5vw;
-  }
-  hr.wad-line {
-    border-top: 3px solid #0c6aec !important;
-    margin: 25px 0;
-  }
-  .wad-search-button {
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: -8px 0px 0px 0px;
-    cursor: pointer;
-  }
-  .wad-airlines-column h3 {
-    font-size: 20px;
-    color: #336699;
-  }
-  .wad-airlines-column > p {
-    color: #336699;
-  }
-  
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
-    .wad-airlines-row {
-      margin: 40px 16px 0 16px;
-    }
-    .wad-airlines-row > h2 {
-      margin-bottom: 40px;
-    }
-    .wad-airlines-column {
-      float: left;
-      width: 50%;
-      padding: 20px 4vw;
-    }
-    .wad-airlines-column > p {
-      font-size: 14px;
-    }
-    .wad-search-button {
-      background-color: red;
-      border: none;
-      color: white;
-      padding: 10px 15px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 15px;
-      margin: -8px 0px 0px 0px;
-      cursor: pointer;
-    }
-  }
-  @media only screen and (max-width: 1024px) and (min-width: 1001px) {
-    .wad-airlines-row {
-      margin: 80px 50px 0 50px;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    hr.wad-line {
-      margin: 18px 0;
-    }
-  
-    .wad-airlines-row > .wad-airlines-column:nth-of-type(2) > h3 {
-      display: none;
-    }
-    .wad-airlines-row {
-      margin: 40px 16px;
-    }
-    .wad-airlines-column {
-      float: none;
-      width: 100%;
-      padding: 0px 0px;
-      margin-top: 20px;
-    }
-    .wad-airlines-column > p {
-      font-size: 14px;
-    }
-    .wad-search-button {
-      padding: 10px 16px;
-      font-size: 12px;
-    }
-  } */
-  
-  /* Top airlines section ends */
 
   /* Top airlines section 1 starts */
 
@@ -1784,6 +1571,9 @@ input[type="submit"] {
     .wd-other-airline-list h4{
       font-size: 18px !important;
     }
+    .wd-other-airline {
+      padding-top: 24px;
+    }
   }
 
   @media screen and (min-width: 581px) and (max-width: 768px){
@@ -1798,120 +1588,6 @@ input[type="submit"] {
 
   /* Top airlines section 1 ends */
   
-  /* Alarm clock Information Starts */
-  
-  /* .wad-row-time {
-    display: table;
-    background-color: #f6f9fe;
-    margin: 40px auto;
-    text-align: center;
-    padding: 40px 16px 40px 16px;
-  }
-  
-  .wad-row-time:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .wad-row-time h2 {
-    font-size: 27px; 
-    margin-bottom: 24px;
-  }
-  
-  .wad-column-time {
-    float: left;
-    width: 25%;
-    padding: 0 20px;
-  }
-  
-  .wad-card-time {
-    width: 240px;
-    height: 240px;
-    box-shadow: 0 0 28px 0 rgba(68, 105, 187, 0.2);
-    border-radius: 20px;
-    padding: 42px 36px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .wad-card-time > p {
-    font-size: 14px;
-    margin-top: 12px;
-  }
-  
-  .wad-card-time > p:nth-of-type(1) {
-    color: grey;
-  }
-  
-  .wad-card-time > p:nth-of-type(2) {
-    font-weight:bold;
-  }
-  
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
-    .wad-row-time {
-      margin: 40px 8%;
-      text-align: center;
-    }
-  
-    .wad-row-time:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  
-    .wad-column-time {
-      margin: 14px auto;
-      float: left;
-      width: 50%;
-      padding: 0px 28px;
-    }
-  
-    .wad-card-time {
-      width: 100%;
-      height: 200px;
-      box-shadow: 0 0 28px 0 rgba(68, 105, 187, 0.2);
-      border-radius: 10px;
-      padding: 24px 12px;
-      text-align: center;
-      background-color: #fff;
-    }
-  }
-  @media only screen and (max-width: 1024px) and (min-width: 1001px){
-    .wad-card-time {
-      width: 190px;
-    }
-    .wad-row-time{
-      margin: 40px;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    .wad-column-time {
-      margin: 6px auto;
-      float: left;
-      width: 50%;
-      padding: 0px 4px;
-    }
-  
-    .wad-card-time {
-      padding: 12px 12px;
-      height: auto;
-      width: 100%;
-    }
-  
-    .wad-card-time > p {
-      font-size: 12px !important;
-      margin-top: 4px !important;
-      margin-bottom: 6px;
-    }
-  
-    .wad-row-time {
-      margin: 0px 0 0 0;
-    }
-  } */
-  
-  /* Alarm clock Information Ends */
-
   /* alarm clock 1 starts */
 
    /*Generic Info*/
@@ -1978,294 +1654,158 @@ input[type="submit"] {
     }
   }
 
-
-
   /* alarm clock 1 ends */
-  
-  /* Table with Logos starts */
-  
-  .wad-search-routes-head {
-    margin-top: 32px !important;
-    display: table;
-    margin: 0 auto;
-    background-color: #315fa0;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .wad-routes-head {
-    text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    height: 56px;
-    padding: 0px 0px;
-    margin: 0 0px;
-  }
-  
-  .wad-column-routes-head1 {
-    padding-left: 6vw !important;
-    padding-right: 10vw;
-  }
-  
-  .wad-column-routes-head2 {
-    padding-right: 5vw;
-    padding-left: 2.5vw;
-  }
-  
-  .wad-column-routes-head3 {
-    padding-right: 5vw;
-    padding-left: 3.5vw;
-  }
-  
-  .wad-column-routes-head4 {
-    padding-right: 8vw;
-    padding-left: 2.5vw;
-  }
-  
-  .wad-column-routes-head1 > p,
-  .wad-column-routes-head2 > p,
-  .wad-column-routes-head3 > p,
-  .wad-column-routes-head4 > p {
-    margin-bottom: 0 !important;
-    font-size: 16px !important;
-    color: white;
-  }
-  
-  .wad-search-routes {
-    display: table;
-    margin: 0 auto;
-    background-color: #f6f9fe;
-    border-radius: 5px;
-  }
-  
-  .wad-routes {
-    text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-  
-  .wad-column-routes {
-    padding: 20px 3.7vw;
-    margin: 0 10px;
-  }
-  
-  .wad-column-routes > p {
-    margin-bottom: 0 !important;
-    font-weight: 700 !important;
-  }
-  
-  .wad-column-routes-sub {
-    padding-left: 1.4vw;
-  }
 
-  .wad-column-routes-sub p{
+  /* Table with logo 1 starts */
+
+  .wad-logo-table {
+    border-collapse: separate;
+    border-spacing: 0 16px;
+    width: 70%;
+    border: none;
+    margin: 0 auto;
+    table-layout: fixed;
+  }
+  
+  .wad-logo-table td{
+    padding: 28px;
+    text-align: center;
+  }
+  
+  .wad-logo-table tr{
+    background-color: #F6F9FE;
+  }
+  
+  
+  .wad-logo-table th {
+    height: 56px;
+    text-align: center;
+    background-color: #336699;
+    color: white;
+  }
+  .wad-logo-table th:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+  .wad-logo-table th:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+  .wad-logo-table-first img {
+    width: 80%;
+  }
+  .wad-logo-table-second p {
     font-size: 18px;
+    font-weight: 700;
   }
-  
-  .wad-column-routes > p > object {
-    margin-bottom: -4px;
-    padding: 0 12px;
+  .wad-logo-table-second object {
+      margin-bottom: -6px;
+      padding: 0 12px;
   }
-  
-  .wad-search-button-routes {
+  .wad-logo-table-third p {
+      font-size: 18px;
+      font-weight: 600;
+      color: #336699;
+  }
+  .wad-logo-table-fourth p {
+      font-size: 18px;
+      font-weight: bold;
+  }
+  .wad-search-button-routes, .wad-search-button-routes:hover {
     background-color: red;
     border: none;
     color: white;
-    padding: 12px 28px;
+    padding: 12px 38px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     margin: -4px 2px 0px 2px;
     cursor: pointer;
   }
-  
-  .wad-table-gap {
-    width: 10px; 
-    height: 10px;
+  .wad-logo-table-second-para {
+      margin-bottom: 14px !important;
   }
-  
-  .wad-routes > .wad-column-routes:nth-of-type(2) > p{
-    font-weight: bold; 
-    font-size: 18px;
-  }
-  
-  .wad-routes > .wad-column-routes:nth-of-type(3) > p{
-    font-weight: bold; 
-    font-size: 14px; 
-    color: #336699;
-  }
-  
-  .wad-routes > .wad-column-routes:nth-of-type(4) > p{
-    padding-bottom: 12px;
-  }
-  
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
-    .wad-search-routes-head {
-      display: table;
-      margin: 0 auto;
-      background-color: #315fa0;
-      color: white;
-      border-radius: 5px;
-    }
-  
-    .wad-routes-head {
-      text-align: center;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-    }
-  
-    .wad-column-routes-head1,
-    .wad-column-routes-head2,
-    .wad-column-routes-head3,
-    .wad-column-routes-head4 {
-      padding: 20px 25px;
-      margin: 0 5px;
-    }
-  
-    .wad-column-routes-head1 {
-      padding-right: 2vw;
-    }
-  
-    .wad-column-routes-head2 {
-      padding-right: 2vw;
-    }
-  
-    .wad-column-routes-head3 {
-      padding-right: 1vw;
-    }
-  
-    .wad-column-routes-head4 {
-      padding-right: 3vw;
-    }
-  
-    .wad-column-routes {
-      padding: 20px 2vw;
-    }
-  
-    .wad-column-routes > img {
-      width: 75%;
-    }
-  
-    .wad-column-routes > p {
-      font-size: 14px !important;
-    }
-  
-    .wad-column-routes > p > object {
-      width: 15% !important;
-      margin-bottom: -1px;
-      padding: 0px;
-    }
-  
-    .wad-search-button-routes {
-      background-color: red;
-      border: none;
-      color: white;
-      padding: 8px 10px 8px 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      margin: -4px 2px 0px 2px;
-      cursor: pointer;
-    }
-  }
-  
+
   @media only screen and (max-width: 480px) {
-    .wad-search-routes-head {
-      margin-top: 0 !important;
-      display: table;
-      margin: 0 auto;
-      background-color: #315fa0;
-      color: white;
-      border-radius: 5px;
-    }
-  
-    .wad-routes-head {
-      text-align: center;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      height: 36px;
-    }
+      .wad-logo-table {
+          margin: 0 auto;        
+          width: 95%;
+          border-spacing: 0 8px;
+      }
+      .wad-logo-table th {
+        font-size: 10px !important;
+        font-weight: 500;
+      }
+      .wad-logo-table-second p {
+          font-size: 10px;
+      }
+      .wad-logo-table-third p {
+          font-size: 10px;
+      }
+      .wad-logo-table-fourth p {
+          font-size: 10px;
+          margin-bottom: 2px;
+      }
+      .wad-search-button-routes {
+        padding: 4px 8px;
+        font-size: 10px;
+        margin: -4px 2px 0px 2px;
+      }
+      .wad-logo-table-first img {
+          width: 70%;
+      }
+      .wad-logo-table td {
+          padding: 12px 0;
+      }
+      .wad-logo-table th {
+          font-size: 10px;
+          height: 36px;
+      }
+      .wad-logo-table-second p object {
+          width: 26px;
+          padding: 0 6px;
+          margin-bottom: -2px;
+      }
+      .wad-logo-table-second-para {
+        margin-bottom: 6px !important;
+      }
+      .wad-logo-table-second p:nth-of-type(2), .wad-logo-table-third p {
+        margin-bottom: 0;
+      }
+  }
 
-
-    .wad-column-routes-head1 > p, .wad-column-routes-head2 > p, .wad-column-routes-head3 > p, .wad-column-routes-head4 > p{
-      font-size: 9px !important;
-}
-  
-    .wad-column-routes-head1,
-    .wad-column-routes-head2,
-    .wad-column-routes-head3,
-    .wad-column-routes-head4 {
-      margin: 0 5px;
-      font-size: 2.5vw;
-      font-weight: 600;
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    .wad-logo-table {
+        width: 90%;
+    } 
+    .wad-logo-table-second p {
+        font-size: 16px;
     }
-  
-    .wad-column-routes-head1 {
-      padding-left: 2vw !important;
-      padding-right: 1vw;
+    .wad-logo-table-third p {
+        font-size: 16px;
     }
-  
-    .wad-column-routes-head2 {
-      padding-right: 1vw;
+    .wad-logo-table-fourth p {
+        font-size: 16px;
     }
-  
-    .wad-column-routes-head3 {
-      padding-right: 6vw;
-    }
-  
-    .wad-column-routes-head4 {
-      padding-right: 6vw;
-    }
-  
-    .wad-routes > .wad-column-routes:nth-of-type(2) > p:nth-of-type(1) {
-      margin-bottom: 4px !important;
-    }
-  
-    .wad-column-routes {
-      padding: 8px 2vw;
-      width: 18vw;
-    }
-  
-    .wad-column-routes > br {
-      display: none;
-    }
-  
-    .wad-column-routes > img {
-      width: 100%;
-    }
-  
-    .wad-column-routes > p {
-      font-size: 8px !important;
-      padding-bottom: 0 !important;
-    }
-  
-    .wad-column-routes > p > object {
-      width: 15% !important;
-      margin-bottom: -1px;
-      padding: 0px;
-    }
-  
     .wad-search-button-routes {
-      background-color: red;
-      border: none;
-      color: white;
-      padding: 2px 5px 2px 5px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 8px;
-      margin: -4px 2px 0px 2px;
-      cursor: pointer;
+        padding: 10px 12px;
+        font-size: 14px;
+        margin: -4px 2px 0px 2px;
+      }
+      .wad-logo-table-first img {
+          width: 100%;
+      }
+      .wad-logo-table-second p object {
+        padding: 0 8px;
     }
   }
-  
-  /* Table with Logos Ends */
+
+  @media only screen and (max-width: 1024px) and (min-width: 1001px) {
+    .wad-logo-table {
+      width: 80%;
+    }
+  }
+
+  /* Table with logo 1 ends */
   
   /* FAQ Section starts */
   
@@ -2467,7 +2007,7 @@ input[type="submit"] {
     width: 35px !important;
   }
   
-  @media only screen and (max-width: 768px) and (min-width: 481px) {
+  @media only screen and (max-width: 1024px) and (min-width: 481px) {
     .wad-faq-cards {
       margin-left: 4%;
       margin-right: 4%;
@@ -2485,7 +2025,7 @@ input[type="submit"] {
     }
   }
   
-  @media only screen and (max-width: 1024px) and (min-width: 1001px) {
+  /* @media only screen and (max-width: 1024px) and (min-width: 1001px) {
     .wad-faq-cards {
       display: flex;
       flex-wrap: wrap;
@@ -2495,7 +2035,7 @@ input[type="submit"] {
       margin-right: 100px;
     }
   }
-  
+   */
   @media only screen and (max-width: 480px) {
     .wad-faq-cards {
       display: flex;
