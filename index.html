@@ -25,252 +25,153 @@
 </head>
 <body onload="addAccordianEventListener()">
   <div class="hamburger">
-      <div class="hamburger-line1"></div>
-      <div class="hamburger-line2"></div>
-      <div class="hamburger-line3"></div>
+    <div class="hamburger-line1"></div>
+    <div class="hamburger-line2"></div>
+    <div class="hamburger-line3"></div>
+  </div>
+  <ul class="menu">
+    <div class="hamburger-close">
+      <span class="close">&times;</span>
     </div>
-    <ul class="menu">
-      <div class="hamburger-close">
-        <span class="close">&times;</span>
-      </div>
-      <li>
-        <a class="menuLink" href="#"><object data="./utils/images/Icons high resolution/flights.png" type="image/png"></object>FLIGHTS</a>
-      </li>
-      <li>
-        <a class="menuLink" href="#"><object data="./utils/images/Icons high resolution/deals.png" type="image/png"></object>DEALS</a>
-      </li>
-      <li>
-        <a class="menuLink" href="#"><object data="./utils/images/Icons high resolution/activities.png" type="image/png"></object>ACTIVITIES</a>
-      </li>
-      <li>
-        <a class="menuLink" href="#"><i class="fa fa-user" aria-hidden="true"></i>MY ACCOUNT</a>
-      </li>
-    </ul>
-    <div class="wad-search-row">
-      <div class="wad-row">
-        <object data="./utils/images/logo.svg" type="image/svg+xml"></object>
-      </div>
-      <div class="wad-column-head">
-        <a class="wad-column-head-center" href="#">
-          <object data="./utils/images/Icons high resolution/flights.png" type="image/png"></object>
-          <span>FLIGHTS</span>
-        </a>
-        <a class="wad-column-head-center" href="#">
-          <object data="./utils/images/Icons high resolution/deals.png" type="image/png"></object>
-          <span>DEALS</span>
-        </a>
-        <a class="wad-column-head-center" href="#">
-          <object data="./utils/images/Icons high resolution/activities.png" type="image/png"></object>
-          <span>ACTIVITIES</span>
-        </a>
-      </div>
-      <div class="wad-column-head-account dropdown">
-        <select id="country" name="country" class="account">
-          <option value="australia">My Account</option>
-        </select>
-      </div>
+    <li>
+      <a class="menuLink" href="#"><object data="./utils/images/Icons high resolution/flights.png" type="image/png"></object>FLIGHTS</a>
+    </li>
+    <li>
+      <a class="menuLink" href="#"><object data="./utils/images/Icons high resolution/deals.png" type="image/png"></object>DEALS</a>
+    </li>
+    <li>
+      <a class="menuLink" href="#"><object data="./utils/images/Icons high resolution/activities.png" type="image/png"></object>ACTIVITIES</a>
+    </li>
+    <li>
+      <a class="menuLink" href="#"><i class="fa fa-user" aria-hidden="true"></i>MY ACCOUNT</a>
+    </li>
+  </ul>
+  <div class="wad-search-row">
+    <div class="wad-row">
+      <object data="./utils/images/logo.svg" type="image/svg+xml"></object>
     </div>
-    <div class="wad-nav-mob">
-      <div class="wad-row-mob">
-        <object data="./utils/images/logo.svg" type="image/svg+xml"></object>
-      </div>
+    <div class="wad-column-head">
+      <a class="wad-column-head-center" href="#">
+        <object data="./utils/images/Icons high resolution/flights.png" type="image/png"></object>
+        <span>FLIGHTS</span>
+      </a>
+      <a class="wad-column-head-center" href="#">
+        <object data="./utils/images/Icons high resolution/deals.png" type="image/png"></object>
+        <span>DEALS</span>
+      </a>
+      <a class="wad-column-head-center" href="#">
+        <object data="./utils/images/Icons high resolution/activities.png" type="image/png"></object>
+        <span>ACTIVITIES</span>
+      </a>
     </div>
-    <section id="wd-breadcrumb-mob">
-      <ul class="custom-container">
-        <li><a href="">Flights ></a></li>
-        <li><a href="">South Africa ></a></li>
-        <li><a href="">Cape Town -</a></li>
-        <li><a href="">Johansburg</a></li>
-      </ul>
-    </section>
-    <div class="wad-mob-heading">
-      <h2>Book Cheap Mango Flights</h2>
+    <div class="wad-column-head-account dropdown">
+      <select id="country" name="country" class="account">
+        <option value="australia">My Account</option>
+      </select>
     </div>
-    <div class="wad-row-button" >
-      <div class="wad-btn-container">
-        <input type="hidden" id="hiddenbutton" value="Round-Trip">
-        <div class="wad-column-button">
-          <button class="wad-compare-button" id="onewaybutton">One Way</button>
+  </div>
+  <div class="wad-nav-mb">
+    <div class="wad-row-mb">
+      <object data="./utils/images/logo.svg" type="image/svg+xml"></object>
+    </div>
+  </div>
+<section id="wd-breadcrumb">
+  <ul class="custom-container">
+    <li><a href="">Flights ></a></li>
+    <li><a href="">South Africa ></a></li>
+    <li><a href="">Cape Town -</a></li>
+    <li><a href="">Junnesburg</a></li>
+  </ul>
+</section>
+  <div class="wad-from">
+    <div class="wad-pageroutes">
+        <h1>Book Flights from Cape Town to Johannesburg</h1>
+    </div>
+    <div class="wad-searchbox">
+      <form onsubmit="redirectURL(); getcms(); return false">
+        <div id="radio">
+          <input type="radio" id="One-Way" value="One-Way" name="radio-button">
+          <label for="One-Way">One Way</label>
+          <input type="radio" id="Round-Trip" value="Round-Trip" name="radio-button" checked="checked" required>
+          <label for="Round-Trip">Round Trip</label>
+          <input type="radio" id="Multi-Trip" value="Multi-Trip" name="radio-button">
+          <label for="Multi-Trip">Multi Trip</label>
         </div>
-        <div class="wad-column-button">
-          <button class="wad-compare-button wad-button-clicked" id="roundtripbutton">Round Trip</button>
-        </div>
-        <div class="wad-column-button">
-          <button class="wad-compare-button" id="multicitybutton">Multi-City</button>
-        </div>
-      </div>
-    </div>
-   
-  <section id="wd-breadcrumb">
-    <ul class="custom-container">
-      <li><a href="">Flights ></a></li>
-      <li><a href="">South Africa ></a></li>
-      <li><a href="">Cape Town -</a></li>
-      <li><a href="">Johansburg</a></li>
-    </ul>
-  </section>
-
-    <div class="wad-from">
-      <div class="wad-pageroutes">
-          <h1>Book Mango Flights from Durban to Johannesburg</h1>
-      </div>
-      <div class="wad-searchbox">
-        <form onsubmit="redirectURL(); getcms(); return false">
-          <div id="radio">
-            <input type="radio" id="One-Way" value="One-Way" name="radio-button">
-            <label for="One-Way">One Way</label>
-            <input type="radio" id="Round-Trip" value="Round-Trip" name="radio-button" checked="checked" required>
-            <label for="Round-Trip">Round Trip</label>
-            <input type="radio" id="Multi-Trip" value="Multi-Trip" name="radio-button">
-            <label for="Multi-Trip">Multi Trip</label>
-          </div>
-          <div class="inputField searchfield">
-            <img src="./utils/images/route.svg" alt="" class="icon">
-            <input type="search2" id="departure" placeholder=" " autocomplete="off">
-            <span>Depart From</span>
-          </div>
-          <div class="inputField searchfield">
-            <img src="./utils/images/route.svg" alt="" class="icon">
-            <input type="search2" id="arrival" placeholder=" " autocomplete="off">
-            <span>Arrival To</span>
-          </div>
-          <div class="wad-third-row">
-            <div class="inputField date-search">
-              <img src="./utils/images/calendar (1).svg" alt="" class="icon">
-              <input type="search" id="departure-date" placeholder=" " autocomplete="off">&nbsp;
-              <span>Departure Date</span>
+        <div class="wad-row-button" >
+          <div class="wad-btn-container">
+            <div class="wad-column-button">
+              <button type="button" class="wad-compare-button" id="onewaybutton">One Way</button>
             </div>
-            <div class="inputField date-search">
-              <img src="./utils/images/calendar (1).svg" alt="" class="icon" id="arrival-icon">
-              <input type="search" id="arrival-date" placeholder=" " autocomplete="off">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span id="spanarrival">Arrival Date</span>
+            <div class="wad-column-button">
+              <button type="button" class="wad-compare-button wad-button-clicked" id="roundtripbutton">Round Trip</button>
             </div>
-            <div class="inputField date-search">
-              <img src="./utils/images/group.svg" alt="" class="icon">
-              <input type="number" min="1" id="travellers" placeholder=" " autocomplete="off">
-              <span>No of Travellers</span>
-            </div>
-            <div class="inputField date-search">
-              <img src="./utils/images/airplane.svg" alt="" class="icon">
-              <input type="search" placeholder=" " id="class" list="journeyclass"  autocomplete="off" onfocus="this.value=''" onchange="this.blur();">
-              <span>Airline class</span>
-              <datalist id="journeyclass">
-                <option value="Business">
-                <option value="Economy">
-              </datalist>
+            <div class="wad-column-button">
+              <button type="button" class="wad-compare-button" id="multicitybutton">Multi-City</button>
             </div>
           </div>
-          <div class="wad-search-flight-btn-desktop-div">
-            <button class="wad-search-flight-btn-desktop" type="submit">
-              Search Flight
-            </button>
         </div>
-        </form>
-    
-          <div class="wad-qbox">
-            <p><object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?
-            </p>
-            <ul>
-              <li>
-                We will always be there for you.
-              </li>
-              <li>
-                We provide the most bang for your bauck.
-              </li>
-              <li>
-                We work quickly to resolve travel issues.
-              </li>
-              <li>
-                We follow through on our promises and commitments.
-              </li>
-            </ul>
+        <div class="inputField searchfield wad-depart">
+          <img src="./utils/images/route.svg" alt="" class="icon">
+          <input type="search2" id="departure" placeholder=" " autocomplete="off">
+          <span>Depart From</span>
+        </div>
+        <div class="inputField searchfield">
+          <img src="./utils/images/route.svg" alt="" class="icon">
+          <input type="search2" id="arrival" placeholder=" " autocomplete="off">
+          <span>Arrival To</span>
+        </div>
+        <div class="wad-third-row">
+          <div class="inputField date-search" id="departure-div">
+            <img src="./utils/images/calendar (1).svg" alt="" class="icon">
+            <input type="search" id="departure-date" class="wad-third-row-input" placeholder=" " autocomplete="off">
+            <span>Departure Date</span>
+          </div>
+          <div class="inputField date-search" id="arrival-div">
+            <img src="./utils/images/calendar (1).svg" alt="" class="icon" id="arrival-icon">
+            <input type="search" id="arrival-date" class="wad-third-row-input" placeholder=" " autocomplete="off">
+            <span id="spanarrival">Arrival Date</span>
+          </div>
+          <div class="inputField date-search">
+            <img src="./utils/images/group.svg" alt="" class="icon">
+            <input type="number" min="1" id="travellers" class="wad-third-row-input" placeholder=" " autocomplete="off">
+            <span>No of Travellers</span>
+          </div>
+          <div class="inputField date-search">
+            <img src="./utils/images/airplane.svg" alt="" class="icon">
+            <input type="search" placeholder=" " id="class" class="wad-third-row-input" list="journeyclass"  autocomplete="off" onfocus="this.value=''" onchange="this.blur();">
+            <span>Airline class</span>
+            <datalist id="journeyclass">
+              <option value="Business">
+              <option value="Economy">
+            </datalist>
           </div>
         </div>
-        
+        <div class="wad-search-flight-btn-desktop-div">
+          <button class="wad-search-flight-btn-desktop" type="submit">
+            Search Flight
+          </button>
       </div>
-      <div class="wad-form-container-mob">
-      <form onsubmit="redirectMobURL(); getcmsmob(); return false">
-        <div class="wad-form-mob">
-          <div class="wad-form-tab row" >
-            <div class="col-md-6">
-              <div class="wad-form-input inputField">
-                <img src="./utils/images/route.svg" alt="" class="icon1">
-                <input id="departure-mob" type="text" placeholder=" " autocomplete="off" required/>
-                <span>Depart From</span>
-              </div>
-              <div class="wad-form-input inputField">
-                <img src="./utils/images/route.svg" alt="" class="icon2">
-                <input id="arrival-mob" type="text" placeholder=" " autocomplete="off" required/>
-                <span>Arrival To</span>
-              </div>
-              <div class="wad-form-input inputField">
-                <img src="./utils/images/group.svg" alt="" class="icon5">
-                <input type="number" min="1" id="travellers-mob" placeholder=" " autocomplete="off" required/>
-                <span>No.of. Travellers</span>
-              </div>
-            </div>
-            
-            <div class="col-md-6">
-              <div class="wad-form-input inputField">
-                <img src="./utils/images/calendar (1).svg" alt="" class="icon3">
-                <input id="departure-date-mob" type="text" placeholder=" " autocomplete="off" required/>
-                <span>Depart Date</span>
-              </div>
-              <div class="wad-form-input inputField">
-                <img src="./utils/images/calendar (1).svg" alt="" class="icon4" id="arrival-icon-mob">
-                <input id="arrival-date-mob" type="text" placeholder=" " autocomplete="off" required/>
-                <span id="spanarrivalmob">Arrival Date</span>
-              </div>
-              <div class="wad-form-input inputField">
-                <img src="./utils/images/airplane.svg" alt="" class="icon6">
-                <input type="text" id="class-mob" list="journeyclass-mob" placeholder=" " autocomplete="off" onfocus="this.value=''" onchange="this.blur();" required/>
-                <span>Airline Class</span>
-              <datalist id="journeyclass-mob">
-                <option value="Business">
-                <option value="Economy">
-              </datalist>
-              </div>
-            </div>  
-          </div>
-        </div>
-        <!-- <div class="wad-form-sub-buttons">
-          <div>
-            <p>Non stop flights</p>
-          </div>
-          <div>
-            <p>Add another Traveller</p>
-          </div>
-        </div> -->
-        <button class="wad-search-flight-btn" onclick='redirectMobURL()'>
-          Search Flight
-        </button>
       </form>
-        <div class="wad-form-details">
-          <div>
-            <p>
-              <object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?
-            </p>
-            <div class="wad-form-ul">
-              <ul>
-                <li>
-                  We will always be there for you.
-                </li>
-                <li>
-                  We provide the most bang for your bauck.
-                </li>
-                <li>
-                  We work quickly to resolve travel issues.
-                </li>
-                <li>
-                  We follow through on our promises and commitments.
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="wad-qbox">
+          <p><object data="./utils/images/Group 7.svg" type="image/svg+xml"></object>&nbsp;Why Book flights with Wadiia ?</p>
+          <ul>
+            <li>
+              We will always be there for you.
+            </li>
+            <li>
+              We provide the most bang for your bauck.
+            </li>
+            <li>
+              We work quickly to resolve travel issues.
+            </li>
+            <li>
+              We follow through on our promises and commitments.
+            </li>
+          </ul>
         </div>
       </div>
-
-      <!-- Header with Form section ends -->
+    </div>
+    <!-- Header with Form section ends -->
 
       <!-- Blue card 1 starts -->
 
