@@ -181,21 +181,22 @@ function redirectURL() {
   var journeyclass = document.getElementById("class").value;
 
   window.open(
-    "../../flights/" +
-      "?trip=" +
-      trip +
-      "&sourceCity=" +
-      departure +
-      "&destinationCity=" +
-      arrival +
-      "&fromDate=" +
-      fromdate +
-      "&toDate=" +
-      todate +
-      "&travellers=" +
-      traveller +
-      "&class=" +
-      journeyclass
+    "../../flight-listing" +
+    "?fromDate=" +
+    fromdate +
+    "&toDate=" +
+    todate +
+    "&fromLocation=" +
+    departure +
+    "&toLocation=" +
+    arrival +
+    "&passanger=" +
+    traveller +
+    "&serviceClass=" +
+    journeyclass +
+    "&tripType=" +
+    trip
+    
   );
 
   return false;
