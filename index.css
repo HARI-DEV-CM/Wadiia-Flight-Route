@@ -1237,7 +1237,7 @@ input[type="submit"] {
     padding: 56px 0 0px;
   }
   .wd-other-airline-list{
-    width: 892px;
+    width: 95%;
     margin: 0 auto;
     padding: 40px 0;
   }
@@ -1327,6 +1327,20 @@ input[type="submit"] {
     }
     .wd-other-airline-list{
       width: 692px;
+    }
+  }
+
+  @media screen and (min-width: 1120px){
+    .wd-other-airline-list span a{
+      text-overflow: unset;
+      overflow: visible;
+    }
+    .wd-other-airline-list {
+      text-align: center;
+    }
+    .wd-other-airline-list li {
+      text-align: left;
+      min-width: 35%;
     }
   }
 

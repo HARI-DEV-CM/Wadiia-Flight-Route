@@ -201,3 +201,60 @@ function redirectURL() {
 
   return false;
 }
+
+
+//Load more table
+// $(function() {
+//   var totalrowshidden;
+//   var rows2display = 10;
+//   var rem = 0;
+//   var rowCount = 0;
+//   var forCntr;
+//   var forCntr1;
+//   var MaxCntr = 0;
+//   var forStarter = 0;
+
+//   $('#showtable').click(function() {
+//       rowCount = $('#wad-logo-table tr').length;
+
+//       MaxCntr = forStarter + rows2display;
+
+//       if (forStarter <= $('#wad-logo-table tr').length) {
+
+//           for (var i = forStarter; i < MaxCntr; i++) {
+//               $('tr:nth-child(' + i + ')').show(200);
+//           }
+
+//           forStarter = forStarter + rows2display;
+
+//           if (forStarter-1 >= rowCount) {
+//             $('#showtable').hide();
+//           }
+//       } else {
+//           $('#showtable').hide();
+//       }
+//   });
+
+
+
+//   $(document).ready(function() {
+//       var rowCount = $('#wad-logo-table tr').length;
+
+//       if (rowCount < 6 ){
+//         $('#showtable').hide();
+//       }
+//       else if (forStarter-1 >= rowCount) {
+//         $('#showtable').hide();
+//       }
+//       else {
+//         $('#showtable').show();
+//       }
+
+//       for (var i = $('#wad-logo-table tr').length; i-1 > rows2display; i--) {
+//           rem = rem + 1
+//           $('tr:nth-child(' + i + ')').hide(200);
+//       }
+//       forCntr = $('#wad-logo-table tr').length - rem;
+//       forStarter = forCntr + 1
+//   });
+// });
