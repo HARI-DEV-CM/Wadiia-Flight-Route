@@ -30,7 +30,7 @@ function toinput() {
   url1 = "https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + to;
   console.log(url1);
   if(to.length > 2) {
-    $(function getdeparture() {
+    $(function getarrival() {
       $.getJSON(url1, function (data) {
         let autoComplete = [];
         for (var i = 0, len = data.length; i < len; i++) {
@@ -45,20 +45,6 @@ function toinput() {
     });
   }
 }
-
-$(function getarrival() {
-  $.getJSON(url, function (data) {
-    let autoComplete = [];
-    for (var i = 0, len = data.length; i < len; i++) {
-      data[i].cityName && autoComplete.push(data[i].cityName +", "+ data[i].countryCode + " - " + data[i].name + " (" + data[i].iata + ")");
-    }
-    $("#arrival").autocomplete({
-      source: autoComplete,
-      // minLength: 2,
-      autoFocus: true,
-    });
-  });
-});
 
 
 $(function () {
@@ -267,8 +253,8 @@ function redirectURL() {
       if (departcountry === arrivalcountry) { domorint = "domestic" }
       else { domorint = "international" }
 
-      window.open("https://newdemo.wadiia.com/" +
-        "../../../flight-listing/" +
+      window.open(
+        "https://newdemo.wadiia.com/flight-listing/" +
         domorint +
         "?fromDate=" +
         fromdate +
