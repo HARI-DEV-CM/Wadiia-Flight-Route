@@ -452,6 +452,10 @@ input[type="number"] {
   transition: all 0.5s; */
 }
 
+#travellers {
+  cursor: pointer;
+}
+
 .inputField input:focus {
   outline: none;
 }
@@ -1051,6 +1055,108 @@ input[type="submit"] {
 }
 
 /* Header with Form section ends */
+
+/* Search widget traveller starts */
+
+.wad-travellers-card {
+  display: none;
+  position: absolute;
+  width: 270px;
+  border-radius: 0px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  height: max-content;
+  /* margin-top: 10px; */
+  background-color: white;
+  z-index: 1;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.wad-travellers-contents {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+}
+.wad-travellers-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.wad-travellers-category {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  margin-top: 2.5%;
+}
+.plus_icon,
+.minus_icon {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  padding: 0 8px;
+}
+.plus_icon :hover,
+.minus_icon :hover {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.wad-travellers-count {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  margin-top: 5%;
+  width: 20px;
+  text-align: center;
+}
+.wad-travellers-subcategory {
+  color: #9f9faf;
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  position: static !important;
+}
+.btn_done {
+  width: 100%;
+  background-color: #336699 !important;
+  border-radius: 3px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: white !important;
+}
+.wad-travellers-elements {
+  padding: 1px 2px;
+}
+.btn_elements {
+  padding: 6px 2px;
+}
+
+/* Search widget traveller ends */
+
+
+/* traveller class starts */
+.wad-class-card {
+  position: absolute ;
+  display: none;
+  width: 98%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  height: 96px;
+  transform: translateX(-49%);
+  left: 50%;
+}
+.wad-class-contents {
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+}
+.wad-class-category {
+  font-size: 15px;
+}
+.wad-class-contents:hover {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+/* traveller class ends */
+
 
   /* blue card 1 starts */
 
@@ -2244,18 +2350,19 @@ input[type="submit"] {
   .ui-datepicker th {
     font-weight: normal !important;
   }
-  
-  input::-webkit-calendar-picker-indicator {
-    color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    display: block;
-    background: url(./utils/images/arrow_back_ios_black_24dp/arrow_back_ios_black_24dp@2x.png)
-      no-repeat;
-    background-size: 14px;
-    background-position: center top;
-    width: 10px;
-    height: 10px;
-    border-width: thin;
+
+  .wad-bus_or_eco {
+    position: relative;
+    display: inline-block;
+  }
+  .wad-bus_or_eco::before {
+    position: absolute;
+    content: url(./utils/images/arrow_back_ios_black_24dp/arrow_back_ios_black_24dp@2x.png);
+    transform: scale(0.65);
+    top: 18px;
+    right: 12px;
+    height: 20px;
+    width: 20px;
   }
   
   .wad-button-clicked {
