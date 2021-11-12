@@ -196,6 +196,7 @@ $("#multicitybutton").click(function () {
   var arrivalCouncode;
 
 function redirectURL() {
+  console.log("1");
   var departure = document.getElementById("departure").value;
     var departcode = departure.match(/\((.*?)\)/);
     var departcode1 = departcode[1].trimRight();
@@ -212,6 +213,7 @@ function redirectURL() {
         departcity = objectdata[0].cityName;
         departCouncode = objectdata[0].countryCode;
       });
+      console.log("2");
       arrivalcity();
     });
   var arrival = document.getElementById("arrival").value;
@@ -229,6 +231,7 @@ function redirectURL() {
         arrivalcountry = objectdata[0].countryName;
         arrivalcity = objectdata[0].cityName;
         arrivalCouncode = objectdata[0].countryCode;
+        console.log("3");
         URL();
       });
     }
@@ -242,6 +245,7 @@ function redirectURL() {
   var journeyclass = document.getElementById("class").value;
   
     function URL() {
+      console.log("4");
       if (departcountry === arrivalcountry) { domorint = "domestic" }
       else { domorint = "international" }
 
