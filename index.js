@@ -5,46 +5,45 @@ let faqsTitle = document.querySelector("#faqHeading");
 
 var url;
 var url1;
-function frominput() {
-  var from = document.getElementById("departure").value;
-  url = "https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + from;
-  console.log(url);
-  if(from.length > 2) {
-    $(function getdeparture() {
-      $.getJSON(url, function (data) {
+$(function () {
+  var autoComplete = function (request, response) {
+    $.getJSON("https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + request.term,
+      function (data) {
+        url = "https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + request.term;
         let autoComplete = [];
         for (var i = 0, len = data.length; i < len; i++) {
-          data[i].cityName && autoComplete.push(data[i].cityName +", "+ data[i].countryCode + " - " + data[i].name + " (" + data[i].iata + ")");
+          data[i].cityName && autoComplete.push(data[i].cityName + ", " + data[i].countryCode + " - " + data[i].name + " (" + data[i].iata + ")" );
         }
-        $("#departure").autocomplete({
-          source: autoComplete,
-          minLength: 3,
-          autoFocus: true,
-        });
-      });
-    });
-  }
-}
-function toinput() {
-  var to = document.getElementById("arrival").value;
-  url1 = "https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + to;
-  console.log(url1);
-  if(to.length > 2) {
-    $(function getarrival() {
-      $.getJSON(url1, function (data) {
+        response(autoComplete);
+      }
+    );
+  };
+  $("#departure").autocomplete({
+    source: autoComplete,
+    minLength: 3,
+    autoFocus: true
+  });
+});
+
+$(function () {
+  var autoComplete = function (request, response) {
+    $.getJSON("https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + request.term,
+      function (data) {
+        url1 = "https://test.api.agentplus.io/publicservices/GetAirportsByPrefix/" + request.term;
         let autoComplete = [];
         for (var i = 0, len = data.length; i < len; i++) {
-          data[i].cityName && autoComplete.push(data[i].cityName +", "+ data[i].countryCode + " - " + data[i].name + " (" + data[i].iata + ")");
+          data[i].cityName && autoComplete.push(data[i].cityName + ", " + data[i].countryCode + " - " + data[i].name + " (" + data[i].iata + ")" );
         }
-        $("#arrival").autocomplete({
-          source: autoComplete,
-          minLength: 3,
-          autoFocus: true,
-        });
-      });
-    });
-  }
-}
+        response(autoComplete);
+      }
+    );
+  };
+  $("#arrival").autocomplete({
+    source: autoComplete,
+    minLength: 3,
+    autoFocus: true
+  });
+});
 
 
 $(function () {
@@ -167,7 +166,6 @@ $("#onewaybutton").click(function () {
   document.getElementById("roundtripbutton").classList.remove("wad-button-clicked");
   document.getElementById("multicitybutton").classList.remove("wad-button-clicked");
   trip = "Oneway";
-  console.log(trip);
 });
 
 $("#roundtripbutton").click(function () {
@@ -203,8 +201,6 @@ function redirectURL() {
     var departcode1 = departcode[1].trimRight();
     var departname = departure.match(/\- (.*?)\(/);
     var departname1 = departname[1].trimRight();
-    console.log(departcode1);
-    console.log(departname1);
 
     $(function mapping() {
       $.getJSON(url, function (data) {
@@ -212,35 +208,30 @@ function redirectURL() {
           return obj.iata === departcode1 &&
                  obj.name === departname1;
         })
-        console.log(data);
         departcountry = objectdata[0].countryName;
-        console.log(departcountry);
         departcity = objectdata[0].cityName;
         departCouncode = objectdata[0].countryCode;
       });
+      arrivalcity();
     });
-    console.log(departcountry);
   var arrival = document.getElementById("arrival").value;
     var arrivalcode = arrival.match(/\((.*?)\)/);
     var arrivalcode1 = arrivalcode[1].trimRight();
     var arrivalname = arrival.match(/\- (.*?)\(/);
     var arrivalname1 = arrivalname[1].trimRight();
-    console.log(arrivalcode1);
-    console.log(arrivalname1);
 
-    $(function mapping() {
+    function arrivalcity() {
       $.getJSON(url1, function (data) {
         var objectdata = data.filter(obj => {
           return obj.iata === arrivalcode1 &&
                 obj.name === arrivalname1;
         })
-        console.log(data);
         arrivalcountry = objectdata[0].countryName;
         arrivalcity = objectdata[0].cityName;
         arrivalCouncode = objectdata[0].countryCode;
         URL();
       });
-    });
+    }
 
   var fromdate = document.getElementById("departure-date").value;
   var todate = document.getElementById("arrival-date").value;
@@ -249,6 +240,7 @@ function redirectURL() {
   var child = document.getElementById("child-count").innerHTML;
   var infant = document.getElementById("infant-count").innerHTML;
   var journeyclass = document.getElementById("class").value;
+  
     function URL() {
       if (departcountry === arrivalcountry) { domorint = "domestic" }
       else { domorint = "international" }
